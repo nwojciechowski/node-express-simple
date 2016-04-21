@@ -22,7 +22,7 @@ api.use(function(req, res, next) {
 
 api.get('/', function (req, res) {  
   var response = {
-    helloworld : 'You\'re the best around'
+    helloworld : 'You\'re the best around!'
   };
   
   res.json(response);  
