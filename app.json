@@ -1,0 +1,9 @@
+{
+  "name": "node-express-simple",
+  "description": "Fast way to get a project up and running on heroku",
+  "repository": "https://github.com/brabidou/node-express-simple",
+  "keywords": ["node", "express"],
+  "env": {
+
+  }
+}
