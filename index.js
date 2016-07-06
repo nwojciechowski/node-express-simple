@@ -13,7 +13,8 @@ var server        = express();
 
 
 
-server.set('port', process.env.PORT || 5000)
+server.set('port', process.env.PORT || 5000);
+server.set('view engine', 'jade');
 server.use(morgan('tiny')); //:method :url :status :res[content-length] - :response-time ms
 server.use(routes);
 
