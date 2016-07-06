@@ -1,19 +1,23 @@
 # Starter Project node-express-simple
 ### What is this?
-Simple start project running Node/Express configured to run and debug 
-in Visual Studio Code and deploy easily to Heroku. It is a fast way to 
-get Static Assets served or a simple API up and running
+Simple start project running Node/Express configured to run and debug
+in Visual Studio Code and deploy easily to Heroku. It is a fast way to
+get Static Assets served or a simple API up and running.
+
+#### Now with Jade and Nodemon
 
 ### Basic Functionality
 - `index.js`: Entry point for the app. Add's Morgan logging and sets the default port
 - `src/routes.js`: Place to add more routes in the future.
-- `src/html/*`: Host static assets.
-    - `URL: /index.html`
-    - `URL: /css/styles.css`
-    - `URL: /js/scripts.css`
+- `src/views/*`: Host Jade Templates
+    - `URL: ./index.jade` Default Page to load
+    - `URL: ./layout.jade` Template to use for other pages
+- `src/assets/*`: Host static assets.
+    - `URL: ./css/styles.css`
+    - `URL: ./js/scripts.css`
 - `src/api/api.js`: Place for RESTful API
     - `URL: /api`
-    - `Accepts:GET & POST by default` 
+    - `Accepts:GET & POST by default`
     - `GET` returns a basic hello world json object
     - `POST` echos whatever you send to it in the body.
 
@@ -25,7 +29,7 @@ Deploy the default to heroku by clicking the Deploy to Heroko button. I would re
 
 
 ### Development and Installation
-The code in `.vscode` should allow you to run and debug right from [Visual Studio Code](https://code.visualstudio.com/) or you can run it from the command line. It will default to run on port 5000 if one is not given. Currently in 
+The code in `.vscode` should allow you to run and debug right from [Visual Studio Code](https://code.visualstudio.com/) or you can run it from the command line. It will default to run on port 5000 if one is not given. Currently in
 
 
 ```
